@@ -1,0 +1,23 @@
+body { 
+font-family: system-ui, sans-serif;  
+background-color: #DBFCFF;  
+color: #000000; 
+max-width: 70em;  
+margin: 4em auto;  
+} 
+
+.alan-sans-otsikot {
+  font-family: "Alan Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.mermaid {
+  width: 80vw;
+  max-width: 50em;
+  margin-top: 3em;
+}
+
+
+

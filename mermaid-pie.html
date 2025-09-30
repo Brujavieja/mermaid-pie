@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="04-tehtava-mermaid-kirjasto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+    <title>Tehtävä: Mermaid-kirjasto</title>
+</head>
+<body>
+    <h1 class="alan-sans-otsikot">Lemmikit 2024</h1>
+    <p>Pääosin saamme huolehtia koirista ja kissoista, mutta myös eksoottisemmista lemmikeistä.</br>
+        Alla näet vuoden 2024 jakauman.</p>
+    
+    <!-- kaavion sisältö -->
+    <div>
+        <pre class="mermaid">
+        pie 
+        title Hoidossa olleet lemmikit 2024
+            "Koirat" : 146
+            "Kissat" : 82
+            "Linnut ja matelijat" : 8
+        </pre>
+    </div>
+
+    <!-- kaavion piirtäminen -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+        mermaid.initialize({
+            startOnLoad: true,
+            themeVariables: {
+
+        /* otsikon fontti */
+            fontFamily: 'Alan Sans, Arial, sans-serif',
+            pieTitleTextSize: '24px',
+            pieSectionTextSize: '14px',
+            
+        /* slice colors (järjestyksessä) */
+            pie1: '#A7AAE1', 
+            pie2: '#F2AEBB',
+            pie3: '#F5D3C4',
+
+        /* sisärajat (sector stroke) */
+            pieStrokeColor: '#DBFCFF',
+            pieStrokeWidth: '2',
+
+        /* koko piirakan ulkoreuna (outer stroke) */
+            pieOuterStrokeColor: '#DBFCFF',
+            pieOuterStrokeWidth: '0',
+
+        /* läpinäkyvyys (opacity) */
+            pieOpacity: 1
+            }
+        });
+    </script>
+</body>
+</html>
+
+
